@@ -26,6 +26,7 @@ Segui a ordem de execução sugerida no enunciado original (seção "Ordem de ex
 7. **Tracker** (`docs/TRACKER.md`), construído por varredura sistemática dos quatro documentos anteriores, linha a linha, e depois **verificado programaticamente** (script Python rodado via terminal) para confirmar as taxas de cobertura exigidas pelo enunciado.
 8. **Este README**, escrito logo após o Tracker, documentando o processo até aquele ponto.
 9. **Revisão final**: antes de commitar, pedi duas passadas de auditoria — (a) uma checagem de consistência cruzada entre `TRANSCRICAO.md`, o código-fonte e os 11 documentos gerados (existência de todo caminho de arquivo citado, consistência numérica de parâmetros como retry/timeout/limites entre documentos, resolução de todos os links internos) e (b) a checklist completa de critérios de aceite do `README_ENUNCIADO.md`, item por item. A auditoria encontrou 3 inconsistências reais, corrigidas antes do commit (ver "Iterações e Ajustes", item 5). Este README foi atualizado por último, após a revisão, para registrar essa etapa.
+10. **`CLAUDE.md`** (fora do escopo pedido pelo enunciado): depois de entregar o pacote, pedi a geração de um `CLAUDE.md` de projeto — reaproveitando `aux_docs/analise-codigo-atual.md` como insumo — para orientar instâncias futuras do Claude Code que venham a trabalhar neste repositório (comandos de build/teste/lint, arquitetura em alto nível, inconsistências reais do código como o uso incompleto de `requireRole`, e um ponteiro para o pacote de design docs como referência para a implementação futura da feature de webhooks).
 
 ## Prompts Customizados
 
@@ -70,3 +71,4 @@ Ordem sugerida de leitura, da fonte primária até a documentação final:
 7. [`docs/PRD.md`](./docs/PRD.md) — consolidação em nível de produto/negócio.
 8. [`docs/TRACKER.md`](./docs/TRACKER.md) — rastreabilidade cruzada de cada item aos documentos acima.
 9. [`README_ENUNCIADO.md`](./README_ENUNCIADO.md) — enunciado original do desafio, para referência.
+10. [`CLAUDE.md`](./CLAUDE.md) — não faz parte da entrega exigida pelo desafio; guia de orientação para instâncias futuras do Claude Code operarem neste repositório.
